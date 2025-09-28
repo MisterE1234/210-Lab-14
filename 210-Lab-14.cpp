@@ -7,16 +7,19 @@ using namespace std;
 
 class Color {
 private:
+//Private member variables
     string name;
     int red;
     int green;
     int blue;
 public:
     // getter and setter member functions
+    //getter functions:
     string getName() const { return name; }
     int getRed() const { return red; }
     int getGreen() const { return green; }
     int getBlue() const { return blue; }
+    //setter functions:
     void setName(string n) { name = n; }
     void setRed(int r) { red = r; }
     void setGreen(int g) { green = g; }
@@ -30,65 +33,66 @@ public:
 };
 
 int main() {
-    Color color1, color2, color3, color4;
+    // Create Color objects
+    Color colorB, colorCR, colorLG, colorW;
 
     // Set values for color1
-    color1.setName("Sky Blue");
-    color1.setRed(135);
-    color1.setGreen(206);
-    color1.setBlue(235);
+    colorB.setName("Black");
+    colorB.setRed(0);
+    colorB.setGreen(0);
+    colorB.setBlue(0);
 
     // Set values for color2
-    color2.setName("Crimson Red");
-    color2.setRed(220);
-    color2.setGreen(20);
-    color2.setBlue(60);
+    colorCR.setName("Crimson Red");
+    colorCR.setRed(220);
+    colorCR.setGreen(20);
+    colorCR.setBlue(60);
 
     // Set values for color3
-    color3.setName("Lime Green");
-    color3.setRed(50);
-    color3.setGreen(205);
-    color3.setBlue(50);
+    colorLG.setName("Lime Green");
+    colorLG.setRed(50);
+    colorLG.setGreen(205);
+    colorLG.setBlue(50);
 
     // Set values for color4
-    color4.setName("Deep Purple");
-    color4.setRed(75);
-    color4.setGreen(0);
-    color4.setBlue(130);
+    colorW.setName("White");
+    colorW.setRed(250);
+    colorW.setGreen(250);
+    colorW.setBlue(250);
 
     //displaying all the reds of each color
     cout << "Red values of each color:\n";
-    cout << color1.getName() << ": " << color1.getRed() << endl;
-    cout << color2.getName() << ": " << color2.getRed() << endl;
-    cout << color3.getName() << ": " << color3.getRed() << endl;
-    cout << color4.getName() << ": " << color4.getRed() << endl;
+    cout << colorB.getName() << ": " << colorB.getRed() << endl;
+    cout << colorCR.getName() << ": " << colorCR.getRed() << endl;
+    cout << colorLG.getName() << ": " << colorLG.getRed() << endl;
+    cout << colorW.getName() << ": " << colorW.getRed() << endl;
     cout << endl;
 
     //displaying all the greens of each color
     cout << "Green values of each color:\n";
-    cout << color1.getName() << ": " << color1.getGreen() << endl;
-    cout << color2.getName() << ": " << color2.getGreen() << endl;
-    cout << color3.getName() << ": " << color3.getGreen() << endl;
-    cout << color4.getName() << ": " << color4.getGreen() << endl;
+    cout << colorB.getName() << ": " << colorB.getGreen() << endl;
+    cout << colorCR.getName() << ": " << colorCR.getGreen() << endl;
+    cout << colorLG.getName() << ": " << colorLG.getGreen() << endl;
+    cout << colorW.getName() << ": " << colorW.getGreen() << endl;
     cout << endl;
 
     //displaying all the blues of each color
     cout << "Blue values of each color:\n";
-    cout << color1.getName() << ": " << color1.getBlue() << endl;
-    cout << color2.getName() << ": " << color2.getBlue() << endl;
-    cout << color3.getName() << ": " << color3.getBlue() << endl;
-    cout << color4.getName() << ": " << color4.getBlue() << endl;
+    cout << colorB.getName() << ": " << colorB.getBlue() << endl;
+    cout << colorCR.getName() << ": " << colorCR.getBlue() << endl;
+    cout << colorLG.getName() << ": " << colorLG.getBlue() << endl;
+    cout << colorW.getName() << ": " << colorW.getBlue() << endl;
     cout << endl;
 
 
     // Print the colors
-    color1.print();
+    colorB.print();
     cout << endl;
-    color2.print();
+    colorCR.print();
     cout << endl;
-    color3.print();
+    colorLG.print();
     cout << endl;
-    color4.print();
+    colorW.print();
     cout << endl;
 
     return 0;
